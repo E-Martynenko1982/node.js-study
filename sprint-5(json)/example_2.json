@@ -1,0 +1,48 @@
+{
+	"user": {
+		"id": 1024,
+		"name": {
+			"first": "Іван",
+			"last": "Петренко"
+		},
+		"contacts": {
+			"email": "ivan.petrenko@example.com",
+			"phones": [
+				{
+					"type": "mobile",
+					"number": "+380501234567"
+				},
+				{
+					"type": "home",
+					"number": "+380445551122"
+				}
+			],
+			"address": {
+				"country": "Україна",
+				"city": "Київ",
+				"zip": "01001",
+				"coordinates": {
+					"lat": 50.4501,
+					"lng": 30.5234
+				}
+			}
+		},
+		"roles": ["admin", "editor"],
+		"settings": {
+			"theme": "dark",
+			"notifications": {
+				"email": true,
+				"sms": false,
+				"push": {
+					"enabled": true,
+					"frequency": "daily"
+				}
+			}
+		}
+	},
+	"metadata": {
+		"createdAt": "2025-07-02T10:15:00Z",
+		"updatedAt": "2025-07-02T12:30:00Z",
+		"active": true
+	}
+}
