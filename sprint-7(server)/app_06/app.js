@@ -25,6 +25,7 @@ const mimeTypes = {
   ".woff2": "font/woff2",
   ".bin": "application/octet-stream",
 };
+
 const handleNotFound = (res) => {
   res.statusCode = 404;
   res.end('Not Found');
@@ -51,7 +52,10 @@ http.createServer(function (req, res) {
       console.log("Contact page");
       staticFile(res, "/contact.html", ".html")
       break;
-
+    case "/about":
+      console.log("Contact page");
+      staticFile(res, "/about.html", ".html")
+      break;
     default:
       const extname = String(path.extname(url)).toLowerCase();
       if (extname in mimeTypes) {

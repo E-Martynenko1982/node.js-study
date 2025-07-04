@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>About</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Node.js</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/contact">Contact</a></li>
+                <li><a class="dropdown-item" href="/about">About</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login" tabindex="-1">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Node.js: Потужність та Переваги для Сучасних Веб-Додатків</h1>
+      <p class="lead">
+        У сучасному світі розробки, де швидкість, ефективність та масштабованість є ключовими, Node.js міцно закріпив за
+        собою
+        репутацію однієї з найпопулярніших технологій. Ця платформа, побудована на JavaScript-рушії V8 від Google
+        Chrome,
+        дозволяє розробникам створювати високопродуктивні, масштабовані та швидкі мережеві додатки. Але що саме робить
+        Node.js
+        таким особливим? Давайте розберемося.
+      </p>
+      <h2>Що таке Node.js?</h2>
+      <p>
+        Node.js не є фреймворком чи бібліотекою у традиційному розумінні. Це середовище виконання JavaScript на стороні
+        сервера.
+        До його появи JavaScript використовувався переважно для фронтенд-розробки – для інтерактивних елементів у
+        браузерах.
+        Node.js змінив це правило, дозволивши використовувати JavaScript для розробки бекенду, тобто тієї частини
+        додатку,
+        яка
+        працює на сервері та відповідає за логіку, взаємодію з базами даних тощо.
+      </p>
+      <h2>Ключові Переваги Node.js</h2>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">
+          1. Асинхронність та Неблокуючий Ввід/Вивід
+          Основою ефективності Node.js є його неблокуюча, подієво-орієнтована архітектура. Це означає, що коли Node.js
+          виконує
+          операцію, яка потребує часу (наприклад, запит до бази даних або читання файлу), він не чекає її завершення.
+          Натомість,
+          він переходить до обробки наступних запитів, а коли попередня операція завершується, викликається відповідна
+          функція
+          (callback). Це дозволяє Node.js обробляти велику кількість паралельних запитів з мінімальними затримками, що
+          ідеально
+          підходить для додатків з високим навантаженням.
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          2. Єдина Мова для Фронтенду та Бекенду
+          Однією з найбільших зручностей Node.js є можливість використовувати JavaScript як для фронтенду, так і для
+          бекенду. Це
+          спрощує процес розробки, оскільки командам не потрібно перемикатися між різними мовами програмування.
+          Розробники
+          можуть
+          ділитися кодом, переймати досвід та ефективніше працювати над проектом. Це також полегшує найм спеціалістів,
+          адже
+          JavaScript є однією з найпопулярніших мов у світі.
+        </li>
+        <li class="list-group-item list-group-item-success">
+          3. Висока Продуктивність Завдяки V8
+          Node.js працює на рушії V8 від Google Chrome, який відомий своєю неймовірною швидкістю компіляції та виконання
+          JavaScript-коду. V8 компілює JavaScript безпосередньо в машинний код, що забезпечує значну продуктивність. Це
+          робить
+          Node.js чудовим вибором для додатків, які потребують швидкої обробки даних та миттєвої реакції.
+        </li>
+        <li class="list-group-item list-group-item-danger">
+          4. Масштабованість
+          Node.js легко масштабується. Його неблокуюча природа дозволяє обробляти тисячі одночасних з'єднань, що робить
+          його
+          ідеальним для розробки масштабованих мікросервісів та API. Крім того, існує можливість горизонтального
+          масштабування,
+          запускаючи кілька екземплярів Node.js та розподіляючи між ними навантаження.
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          5. Велика Екосистема NPM
+          NPM (Node Package Manager) – це найбільший у світі репозиторій програмних пакетів. Він надає доступ до
+          мільйонів
+          відкритих бібліотек та інструментів, які значно прискорюють розробку. Від роботи з базами даних до
+          аутентифікації
+          користувачів, від тестування до розгортання – для майже будь-якої задачі існує готове рішення в NPM. Це
+          дозволяє
+          розробникам зосередитися на бізнес-логіці, а не винаходити колесо.
+        </li>
+        <li class="list-group-item list-group-item-info">
+          6. Ідеально для Додатків у Режимі Реального Часу
+          Завдяки своїй подієво-орієнтованій архітектурі, Node.js чудово підходить для створення додатків у режимі
+          реального
+          часу,
+          таких як чати, онлайн-ігри, стрімінгові сервіси та спільні редактори. Він забезпечує швидкий та ефективний
+          обмін
+          даними
+          між сервером та клієнтом.
+        </li>
+      </ul>
+
+      <h2>Де Використовується Node.js?</h2>
+      <p>
+        Node.js успішно використовується в багатьох відомих компаніях, таких як Netflix, LinkedIn, Uber, PayPal та
+        багатьох
+        інших. Він ідеально підходить для:
+      </p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">API-серверів та мікросервісів</li>
+        <li class="list-group-item">Додатків у режимі реального часу (чати, ігри)</li>
+        <li class="list-group-item">Стрімінгових платформ</li>
+        <li class="list-group-item">Серверів для односторінкових додатків (SPA)</li>
+        <li class="list-group-item">Інструментів командного рядка</li>
+        <li class="list-group-item">IoT (Інтернет речей)</li>
+      </ul>
+      <h2>Висновок</h2>
+      <p class="lead">
+        Node.js – це не просто технологія, це філософія розробки, яка акцентує увагу на швидкості, ефективності та
+        масштабованості. Його асинхронна природа, єдина мова програмування для всього стеку, потужність V8 та величезна
+        екосистема NPM роблять його одним з найпривабливіших виборів для сучасних веб-додатків. Якщо ви прагнете
+        створювати
+        швидкі, надійні та високопродуктивні рішення, Node.js безсумнівно заслуговує вашої уваги.
+      </p>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
