@@ -1,4 +1,5 @@
 const mysql = require("pg");
+
 const CONFIG = require("./config");
 
 async function connectDataBase() {
@@ -7,9 +8,14 @@ async function connectDataBase() {
     await client.connect();
     console.log("✅ Підключення до бази даних успішне!");
 
-    const query = 'SELECT * FROM public."order_items"';
-    const result = await client.query(query);
-    console.log(result.rows);
+    const text = `INSERT INTO public."products" (product_id, product_name) VALUES ($1, $2)`;
+    const values = [4, 'Product D'];
+    const result = await client.query(text, values);
+    console.log(result.rows)
+
+    //result.rows.forEach(item => console.log(item.quantity))
+
+
   } catch (error) {
     console.error("❌ Помилка підключення або виконання запиту:", error);
   } finally {
